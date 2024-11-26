@@ -12,9 +12,9 @@ constexpr int maxRandom = 100;
 
 struct S {
   float d;
-  int l;
-  int i;
-  short s;
+  int l : 8;
+  int i : 8;
+  short s : 8;
   bool b;
 
   bool operator<(const S &s) const { return this->i < s.i; }
